@@ -186,5 +186,19 @@ namespace ConsoleApp1
                 default: return $"Неизвестно";
             }
         }
+        public static string TernarTask1(int a, int b) 
+        {
+           return $"Максимальное число - {(a>b)? a: b}";
+        }
+        public static string TernarTask2(int rad, int stor) 
+        {
+           int rad = Math.PI * rad * rad;
+           int stor = stor*stor;
+           return $"{(rad>stor)?rad:store}"
+        }
+        public static string TernarTask3() 
+        {
+            
+        }
     }
 }
