@@ -194,11 +194,19 @@ namespace ConsoleApp1
         {
            int rad = Math.PI * rad * rad;
            int stor = stor*stor;
-           return $"{(rad>stor)?rad:store}"
+           return $"{(rad>stor)?rad:store}";
         }
-        public static string TernarTask3() 
+        public static string TernarTask3(int a, int b, int c) 
         {
-            
+           int maxOfTree = (a>b)?((a>c)?a:c):((b>c)?b:c);
+           return $"Максимаьнон число {maxOfTree}";
+        }
+        public static string TernarTask4(int number)
+        {
+           string digits = number.ToString();
+           bool allDifirent = digits.Distinct().Count() == 4;
+           return allDifirent?"да":"нет"; 
+           
         }
     }
 }
