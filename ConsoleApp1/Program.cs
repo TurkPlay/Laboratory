@@ -252,18 +252,31 @@ class Program
     }
     static void Lab7()
     {
-        Console.WriteLine("Лабораторная работа N7");
-        Console.WriteLine();
+        Console.WriteLine("Лабораторная работа N7\n");
+
         Console.WriteLine(AlgoritmLab.MinNum());
         Console.WriteLine();
+
         Console.WriteLine(AlgoritmLab.MaxNum());
         Console.WriteLine();
+
         Console.WriteLine(AlgoritmLab.InsertMin());
         Console.WriteLine();
+
         Console.WriteLine(AlgoritmLab.InsertMax());
         Console.WriteLine();
+
         Console.WriteLine(AlgoritmLab.SelectionMin());
         Console.WriteLine();
+
         Console.WriteLine(AlgoritmLab.SelectionMax());
+        Console.WriteLine();
+
+        Console.WriteLine("Введите два числа для нахождения НОД");
+        Console.WriteLine(AlgoritmLab.EuclidAl(MakeNum(1000,1), MakeNum(1000, 1)));
+        Console.WriteLine();
+
+        Console.WriteLine(AlgoritmLab.FindeNeighbot());
     }
 }
+
