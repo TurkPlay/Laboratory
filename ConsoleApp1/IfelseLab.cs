@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ConsoleApp1
+﻿namespace ConsoleApp1
 {
     internal class IfelseLab
     {
@@ -188,13 +182,13 @@ namespace ConsoleApp1
         }
         public static string TernarTask1(int a, int b) 
         {
-           return $"Максимальное число - {(a>b)? a: b}";
+           return $"Максимальное число - {((a>b)? a: b)}";
         }
-        public static string TernarTask2(int rad, int stor) 
+        public static string TernarTask2(double rad = 0, int stor = 0) 
         {
-           int rad = Math.PI * rad * rad;
-           int stor = stor*stor;
-           return $"{(rad>stor)?rad:store}";
+           double radS = Math.PI * rad * rad;
+           int storS = stor*stor;
+           return $"{((radS>storS)?radS:storS)}";
         }
         public static string TernarTask3(int a, int b, int c) 
         {

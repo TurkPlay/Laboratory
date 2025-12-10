@@ -8,7 +8,8 @@ class Program
     {
         //Lab34();
         //Lab5();
-        Lab6();
+        //Lab6();
+        Lab7();
         Console.ReadKey();
     }
 
@@ -227,5 +228,42 @@ class Program
         double fer3 = MakeDoubleNum(1000, -1000, false);
         int punkt = MakeNum(2, 1);
         Console.WriteLine($"{IfelseLab.BolsheMenshe(fer1, fer2, fer3, punkt)}");
+        // task 1 ternar
+        Console.WriteLine("Тернарные задачи\nЗадача 1\nВведите 2 числа для нахождения максимума");
+        int ternarA = MakeNum(100, -100, false);
+        int ternarB = MakeNum(100, -100, false);
+        Console.WriteLine($"{IfelseLab.TernarTask1(ternarA, ternarB)}");
+        // task 2
+        Console.WriteLine("Задача 2\nСравнение площади круга и квадрата\nВведите радиус круга");
+        double rad = MakeDoubleNum(100, 1);
+        Console.WriteLine("Введите сторону квадрата");
+        int stor = MakeNum(100, 1);
+        Console.WriteLine($"Большая площадь: {IfelseLab.TernarTask2(rad, stor)}");
+        // task 3
+        Console.WriteLine("Задача 3\nВведите 3 числа для нахождения максимума");
+        int tern1 = MakeNum(1000, -1000, false);
+        int tern2 = MakeNum(1000, -1000, false);
+        int tern3 = MakeNum(1000, -1000, false);
+        Console.WriteLine($"{IfelseLab.TernarTask3(tern1, tern2, tern3)}");
+        // task 4
+        Console.WriteLine("Задача 4\nПроверка, все ли цифры в четырёхзначном числе различны\nВведите четырёхзначное число");
+        int fourDigit = MakeNum(9999, 1000);
+        Console.WriteLine($"{IfelseLab.TernarTask4(fourDigit)}");
+    }
+    static void Lab7()
+    {
+        Console.WriteLine("Лабораторная работа N7");
+        Console.WriteLine();
+        Console.WriteLine(AlgoritmLab.MinNum());
+        Console.WriteLine();
+        Console.WriteLine(AlgoritmLab.MaxNum());
+        Console.WriteLine();
+        Console.WriteLine(AlgoritmLab.InsertMin());
+        Console.WriteLine();
+        Console.WriteLine(AlgoritmLab.InsertMax());
+        Console.WriteLine();
+        Console.WriteLine(AlgoritmLab.SelectionMin());
+        Console.WriteLine();
+        Console.WriteLine(AlgoritmLab.SelectionMax());
     }
 }
