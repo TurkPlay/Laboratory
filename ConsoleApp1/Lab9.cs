@@ -57,4 +57,27 @@ class Program
         Console.WriteLine(task2Result);
     }
 
+
+static string CheckProduct(int[] numbers)
+    {
+        if (numbers.Length != 8)
+        {
+            return "Ошибка: должно быть ровно 8 чисел!";
+        }
+        
+        int product = 1;
+        for (int i = 0; i < 8; i++)
+        {
+            product *= numbers[i];
+        }
+        
+        if (product < 10000)
+        {
+            return $"Произведение {product} МЕНЬШЕ 10000";
+        }
+        else
+        {
+            return $"Произведение {product} БОЛЬШЕ ИЛИ РАВНО 10000";
+        }
+    }
 }
