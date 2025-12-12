@@ -80,4 +80,15 @@ static string CheckProduct(int[] numbers)
             return $"Произведение {product} БОЛЬШЕ ИЛИ РАВНО 10000";
         }
     }
+static string CheckNumbers(int n, int[] numbers)
+    {
+        int count = 0;
+        
+        for (int i = 0; i < n; i++)
+        {
+            if (numbers[i] < 20) count++;
+        }
+        
+        return count == 5 ? "Верно" : "Неверно";
+    }
 }
