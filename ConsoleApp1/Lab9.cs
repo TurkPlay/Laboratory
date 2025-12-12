@@ -91,4 +91,24 @@ static string CheckNumbers(int n, int[] numbers)
         
         return count == 5 ? "Верно" : "Неверно";
     }
+static string GetAverageOfMultiples(int m, int n, int[] numbers)
+    {
+        int sum = 0;
+        int count = 0;
+        
+        for (int i = 0; i < m; i++)
+        {
+            if (numbers[i] % n == 0)
+            {
+                sum += numbers[i];
+                count++;
+            }
+        }
+        
+        if (count == 0)
+            return $"Нет чисел, кратных {n}";
+        
+        double average = (double)sum / count;
+        return $"Среднее чисел, кратных {n}: {average:F2} (из {count} чисел)";
+    }
 }
